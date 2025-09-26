@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contextual 3D Asset Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f0f2f5; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem; 
+            margin: 0;
+        }
+        .container { 
+            background: #fff; 
+            padding: 2rem; 
+            border-radius: 12px; 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08); 
+            text-align: center; 
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 { color: #1c1e21; }
+        p { color: #606770; font-size: 1.1rem; }
+        #file-input {
+            border: 2px dashed #ccd0d5;
+            padding: 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: 1.5rem auto;
+            transition: background-color 0.2s;
+        }
+        #file-input:hover { background-color: #f7f8fa; }
+        #image-container { 
+            position: relative; 
+            margin-top: 1rem; 
+            min-height: 200px; /* Prevent layout shift */
+            line-height: 0; /* Remove space below image */
+        }
+        canvas { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            cursor: pointer; 
+        }
+        img { 
+            max-width: 100%; 
+            height: auto;
+            border-radius: 8px; 
+            display: block;
+        }
+        .loader { 
+            display: none; 
+            margin-top: 1.5rem; 
+            text-align: center;
+        }
+        .loader p { font-size: 1.2rem; font-weight: 500; color: #1c1e21; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contextual 3D Asset Generator</h1>
+        <p>Upload a room photo, then click a detected piece of furniture to replace it with an AI-generated model.</p>
+        <input type="file" id="file-input" accept="image/*">
+        <div id="image-container"></div>
+        <div class="loader">
+            <p id="loader-text">Processing...</p>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+
