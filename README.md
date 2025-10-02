@@ -3,7 +3,7 @@ Contextual 3D Asset Generator
 This is an advanced proof-of-concept for an AI-driven interior design tool. The system analyzes a user's room photo, allows them to select an existing piece of furniture, and uses a series of generative models to replace it with a unique, AI-generated 3D asset that is stylistically and contextually appropriate.
 
 The project demonstrates an end-to-end pipeline, from computer vision scene understanding to generative 3D modeling, texturing, and final photorealistic composition.
-🌟 Core Novelty & Technical Depth
+Core Novelty & Technical Depth
 
 This project goes far beyond simple 3D model placement. Its innovation lies in the synergy of multiple AI models to perform a creative task:
 
@@ -15,7 +15,7 @@ This project goes far beyond simple 3D model placement. Its innovation lies in t
 
     Contextual In-Painting: The original object is digitally removed from the photo, and the new, AI-generated object is rendered and composited back into the scene with appropriate lighting and shadows.
 
-🛠️ Tech Stack
+ Tech Stack
 
     Backend: Python, Flask
 
@@ -27,7 +27,7 @@ This project goes far beyond simple 3D model placement. Its innovation lies in t
 
     Generative Models (Simulated): The architecture is designed for models like ShapeGAN (for meshes) and StyleGAN2 (for textures).
 
-🚀 How to Run
+ How to Run
 Prerequisites
 
     You must have Blender installed and its executable available in your system's PATH.
@@ -50,7 +50,7 @@ Setup
 
     Open your browser to http://127.0.0.1:5000. Upload a room image containing a chair or table to see the replacement workflow.
 
-🔧 Detailed Workflow
+ Detailed Workflow
 
     Upload & Detect: The user uploads a room photo. The frontend sends it to the Flask backend, which runs a YOLOv8 model to detect furniture and returns bounding boxes.
 
