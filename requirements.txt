@@ -1,6 +1,11 @@
+# Flask Web Framework
 Flask==3.0.0
-numpy
-opencv-python-headless
-scikit-learn
-Pillow
-ultralytics
+
+# Computer Vision and Machine Learning
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+scikit-learn==1.4.2
+ultralytics==8.2.18
+
+# Production Web Server
+gunicorn==22.0.0

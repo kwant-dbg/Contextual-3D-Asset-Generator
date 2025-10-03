@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contextual 3D Asset Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Contextual 3D Asset Generator</h1>
+            <p>An AI-powered interior design assistant</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="upload-section">
+            <h2>1. Upload Your Room Photo</h2>
+            <p>Upload an image of your room. Our AI will detect furniture that can be replaced.</p>
+            <div class="file-upload-wrapper">
+                <input type="file" id="file-input" accept="image/*" class="file-input">
+                <label for="file-input" class="file-label">
+                    <span class="file-icon">🖼️</span>
+                    <span class="file-button-text">Choose an Image</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="processing-section">
+            <h2>2. Select an Object to Replace</h2>
+            <p>Click on a highlighted object in the image below to replace it with a unique, AI-generated asset.</p>
+            <div id="image-container">
+                <div class="placeholder-text">Your image will appear here</div>
+            </div>
+            <div class="loader">
+                <div class="spinner"></div>
+                <p id="loader-text">Processing...</p>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>3. Your New Room</h2>
+            <p>Here is your room with the newly generated and placed 3D asset.</p>
+            <div id="results-container">
+                 <div class="placeholder-text">Your final image will be displayed here</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AI Interior Designs Inc.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+
